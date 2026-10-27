@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; background: #f2f4f8; color: #222; margin: 0; padding: 24px; }
+main { max-width: 900px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+h1 { margin-top: 0; color: #1f4e79; }
+input, select, button { font-size: 16px; padding: 8px 10px; border: 1px solid #bbb; border-radius: 6px; }
+button { background: #1f4e79; color: #fff; border: none; cursor: pointer; }
+button:hover { background: #163a5a; }
+table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+th, td { padding: 8px; border-bottom: 1px solid #ddd; text-align: left; }
+th { background: #e8eef5; }
+.erro { color: #b00020; font-weight: bold; }
+
+.busca { display: flex; gap: 8px; }
+.fim-de-semana td { background: #fff4d6; color: #8a5a00; font-weight: bold; }
+
+#total { font-size: 18px; }
+.legenda { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #555; }
+.amostra { width: 16px; height: 16px; border-radius: 4px; background: #fff4d6; border: 1px solid #e0b850; }
+
+#proximo:empty { display: none; }
+#proximo { display: flex; flex-direction: column; gap: 4px; margin-top: 12px; padding: 16px; border-radius: 8px; background: #1f4e79; color: #fff; }
+#proximo .rotulo { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; opacity: .8; }
+#proximo .nome { font-size: 22px; font-weight: bold; }
+
+tbody tr:hover td { background: #f2f6fb; }
+.fim-de-semana:hover td { background: #ffecb3; }
+
+@media (max-width: 600px) {
+    body { padding: 12px; }
+    main { padding: 16px; }
+    .busca input { flex: 1; min-width: 0; }
+    th, td { padding: 6px; font-size: 14px; }
+}

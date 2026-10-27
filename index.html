@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feriados Nacionais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <h1>Feriados Nacionais</h1>
+
+        <div class="busca">
+            <input type="number" id="ano" placeholder="Ano">
+            <button id="btnConsultar">Consultar</button>
+        </div>
+
+        <p id="mensagem"></p>
+        <p id="total"></p>
+        <p class="legenda"><span class="amostra"></span> Feriado no sábado ou domingo</p>
+
+    
+        <div id="proximo"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Dia da semana</th>
+                    <th>Feriado</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaFeriados"></tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
